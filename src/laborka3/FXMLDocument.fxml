@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="735.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="laborka3.FXMLDocumentController">
+  <BorderPane />
+  <TableView id="urlsTable" fx:id="convertTable" layoutX="14.0" layoutY="14.0" prefHeight="203.0" prefWidth="707.0">
+    <columns>
+      <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="276.0" text="Nazwa" fx:id="nameColumn" />
+      <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="231.0" text="Postęp" fx:id="progressColumn" />
+      <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="200.0" text="Status" fx:id="statusColumn" />
+    </columns>
+  </TableView>
+  <TextField fx:id="textField" disable="true" focusTraversable="true" layoutX="600.0" layoutY="270.0" prefWidth="103.0" text="ilość wątków" />
+  <ToggleButton fx:id="directoryButton" layoutX="14.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#directoryToggle" prefWidth="103.0" text="Wybierz Folder" />
+  <ToggleButton fx:id="fileButton" layoutX="148.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#fileToggle" prefWidth="103.0" text="Wybierz Plik" />
+  <RadioButton fx:id="sekwencyjnieButton" layoutX="446.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#sekwencyjneToggle" selected="true" text="Sekwencyjnie" />
+  <RadioButton fx:id="wspolbieznieButton" layoutX="446.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#wspolbiezneToggle" text="Wspolbieznie" />
+  <ToggleButton fx:id="startButton" layoutX="321.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#startToggle" text="Rozpocznij" />
+</AnchorPane>
